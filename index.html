@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Iman Langaran — GitHub profile mock</title>
+  <style>
+    /* Basic reset */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html,body { height: 100%; font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:#f6f8fa; color:#0b1220; }
+    a { color: inherit; text-decoration:none; }
+    .container { max-width: 980px; margin: 36px auto; padding: 24px; display: grid; grid-template-columns: 300px 1fr; gap: 28px; }
+
+    /* Profile card (left column) */
+    .card {
+      background: #fff;
+      border: 1px solid #e6edf3;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 6px 20px rgba(17,24,39,0.04);
+    }
+    .avatar {
+      width: 128px;
+      height: 128px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #e6edf3;
+      display:block;
+      margin: 0 auto 14px auto;
+    }
+    .avatar img { width:100%; height:100%; object-fit:cover; display:block; }
+
+    .name { text-align:center; font-size:20px; font-weight:700; margin-bottom:6px; display:flex; gap:8px; align-items:center; justify-content:center;}
+    .login { color:#57606a; font-weight:600; font-size:14px; }
+    .bio { text-align:center; color:#263238; font-size:14px; margin-bottom:10px; max-width:240px; margin-left:auto; margin-right:auto; opacity:0.95; }
+    .meta { display:flex; justify-content:center; gap:12px; color:#444; font-size:13px; margin-bottom:14px; }
+    .follow-btn {
+      display:block;
+      margin:10px auto 0;
+      padding:8px 14px;
+      border-radius:8px;
+      background:#1f6feb;
+      color:white;
+      font-weight:600;
+      border: none;
+      cursor:pointer;
+      text-align:center;
+      width:140px;
+    }
+
+    .achievements { display:flex; justify-content:center; gap:10px; margin-top:14px; }
+    .achievements img { width:44px; height:44px; border-radius:8px; background:#f2f6fb; border:1px solid #e6edf3; padding:6px; }
+
+    /* Right column (main) */
+    .main {
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+    }
+    .header-row {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+    .tabs { display:flex; gap:12px; color:#57606a; font-weight:600; }
+    .tabs a { padding:10px 14px; border-radius:8px; background:transparent; }
+    .tabs a.active { background:#f1f5fb; color:#0b1220; }
+
+    .readme-card, .pinned-card {
+      background:#fff;
+      border:1px solid #e6edf3;
+      border-radius:12px;
+      padding:16px;
+      box-shadow: 0 4px 12px rgba(17,24,39,0.03);
+    }
+
+    .pinned-list { display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:12px; }
+    .pinned {
+      border:1px solid #eef3f8; padding:12px; border-radius:10px;
+      background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+    }
+    .pinned h4 { font-size:15px; margin-bottom:6px; color:#0b1220; }
+    .pinned p { font-size:13px; color:#545b63; margin-bottom:8px; min-height:36px; }
+    .pinned .lang { font-size:12px; color:#2b6cb0; font-weight:600; }
+
+    /* README excerpt */
+    .readme-card pre {
+      background:#f8fafc; border-radius:8px; padding:12px; overflow:auto; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace; color:#0b1220;
+    }
+    .readme-meta { display:flex; gap:12px; color:#57606a; font-size:13px; margin-top:8px; }
+
+    /* responsive */
+    @media (max-width:820px) {
+      .container { grid-template-columns: 1fr; padding:16px; }
+      .avatar { margin-bottom:12px; }
+      .follow-btn { width:100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Left column: profile card -->
+    <div class="card" aria-label="profile">
+      <a class="avatar" href="https://github.com/imanlangaran">
+        <!-- official GitHub avatar (username.png) -->
+        <img src="https://github.com/imanlangaran.png" alt="Iman Langaran avatar">
+      </a>
+
+      <div class="name">
+        <div style="text-align:right;">
+          <div style="font-size:18px;font-weight:800;">Iman Langaran</div>
+          <div class="login">@imanlangaran</div>
+        </div>
+      </div>
+
+      <div class="bio">AI Engineer | Deep Learning | Machine Learning</div>
+
+      <div class="meta">
+        <div>6 followers</div>
+        <div>·</div>
+        <div>13 following</div>
+      </div>
+
+      <div style="text-align:center;">
+        <a class="follow-btn" href="https://github.com/imanlangaran">Follow</a>
+      </div>
+
+      <div class="achievements" title="achievements">
+        <!-- GitHub achievement images are not easily hotlinked from the site, these are placeholders that mimic appearance -->
+        <img alt="YOLO badge" src="https://github.githubassets.com/images/modules/site/icons/footer/github-mark.svg">
+        <img alt="Pull Shark badge" src="https://github.githubassets.com/images/modules/site/icons/github-mark.png">
+      </div>
+
+      <div style="margin-top:16px; font-size:13px; color:#495057;">
+        <strong>Location:</strong> Mashhad
+      </div>
+
+    </div>
+
+    <!-- Right column: main content -->
+    <div class="main">
+      <div class="header-row">
+        <div style="display:flex;flex-direction:column;">
+          <div style="font-size:20px; font-weight:700;">imanlangaran</div>
+          <div style="color:#6b7280; font-size:13px; margin-top:6px;">Profile • Repositories • Projects • Packages • Stars</div>
+        </div>
+        <div class="tabs" role="navigation" aria-label="profile tabs">
+          <a class="active" href="#">Overview</a>
+          <a href="https://github.com/imanlangaran?tab=repositories">Repositories 26</a>
+          <a href="#">Projects 0</a>
+          <a href="#">Packages 0</a>
+          <a href="#">Stars 1</a>
+        </div>
+      </div>
+
+      <!-- README excerpt -->
+      <div class="readme-card">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <h3 style="margin:0;">README.md</h3>
+          <div style="color:#7b8794; font-size:13px;">Showing repository profile README</div>
+        </div>
+
+        <div style="margin-top:12px; color:#263238; font-size:14px;">
+          <pre>
+Hello There
+imanlangaran@gmail.com
+          </pre>
+        </div>
+
+        <div class="readme-meta">
+          <div>Profile README (excerpt)</div>
+        </div>
+      </div>
+
+      <!-- Pinned -->
+      <div class="pinned-card">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <h3 style="margin:0;">Pinned</h3>
+          <div style="color:#7b8794; font-size:13px;">Pinned repositories</div>
+        </div>
+
+        <div style="margin-top:12px;" class="pinned-list">
+          <!-- 1 -->
+          <div class="pinned">
+            <h4><a href="https://github.com/imanlangaran/YOLO-FastAPI" target="_blank">YOLO-FastAPI</a></h4>
+            <p>Jupyter Notebook — quick demo to serve YOLO via FastAPI (pinned)</p>
+            <div class="lang">Jupyter Notebook</div>
+          </div>
+
+          <!-- 2 -->
+          <div class="pinned">
+            <h4><a href="https://github.com/imanlangaran/blog-website-fastapi" target="_blank">blog-website-fastapi</a></h4>
+            <p>Example blog website backend built with FastAPI — shows routes, templates, DB integration.</p>
+            <div class="lang">Python</div>
+          </div>
+
+          <!-- 3 -->
+          <div class="pinned">
+            <h4><a href="https://github.com/imanlangaran/ML_fraudDetection" target="_blank">ML_fraudDetection</a></h4>
+            <p>Machine learning project for fraud detection — datasets, models and evaluation notebooks.</p>
+            <div class="lang">Python</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- small footer -->
+  <footer style="text-align:center; padding:18px; color:#6b7280; font-size:13px;">
+    This is a local mock of the GitHub profile layout. Avatar and repo links point to live GitHub pages.
+  </footer>
+</body>
+</html>
