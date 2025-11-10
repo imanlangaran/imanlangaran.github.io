@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta http-equiv="refresh" content="0; URL='https://imanlangaran.github.io/Developer_Portfolio/'" />
   <title>Redirecting...</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #1e1e2f, #2d2d44);
+      font-family: "Segoe UI", sans-serif;
+      color: #fff;
+      text-align: center;
+    }
+
+    .container {
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      opacity: 0.8;
+    }
+
+    a {
+      color: #4fd6ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Spinner */
+    .loader {
+      margin: 20px auto;
+      border: 6px solid rgba(255, 255, 255, 0.2);
+      border-top: 6px solid #4fd6ff;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
+
 <body>
-  <p>Redirecting to <a href="https://imanlangaran.github.io/Developer_Portfolio/">Developer Portfolio</a>...</p>
+  <div class="container">
+    <h1>Redirecting...</h1>
+    <div class="loader"></div>
+    <p>You are being redirected to your <a href="https://imanlangaran.github.io/Developer_Portfolio/">Developer Portfolio</a>.</p>
+  </div>
 </body>
 </html>
